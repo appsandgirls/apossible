@@ -1,0 +1,145 @@
+:root{
+    --darkblue: #1a2e46;
+    --orange: #f7931c;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-size: 18px;
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .logo{
+    width: auto;
+    height: 100%;
+}
+header .navbar{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar a{
+    text-decoration: none;
+    color: var(--darkblue);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header .navbar a:hover{
+    color: var(--orange);
+    border-radius: 0;
+    border-bottom: 1px solid var(--orange);
+}
+
+footer{
+    background-color: var(--darkblue);
+    color: var(--orange);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.authDiv a{
+    text-decoration: none;
+}
+.authDiv .btn{
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.authDiv .btn-outline{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.above-the-fold{
+    padding: 50px 0 100px 0;
+}
+
+.above-the-fold div{
+    flex: 1;
+    padding-right: 100px;
+}
+
+.above-the-fold h1{
+    font-size: 60px;
+    color: var(--darkblue);
+    padding-bottom: 20px;
+}
+.above-the-fold p{
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+.above-the-fold button{
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--darkblue);
+}
+
+.above-the-fold img{
+    flex: 1;
+    border-radius: 10px;
+}
+
+
+.numbers{
+    background-color: #f4f4f4;
+    margin-bottom: 100px;
+
+}
+.numbers .numbersDiv{
+    padding: 0 20px;
+    text-align: center;
+   
+}
+.numbers .numbersDiv h2{
+    color: var(--orange);
+}
+.numbers .numbersDiv p{
+    color: var(--darkblue);
+}
