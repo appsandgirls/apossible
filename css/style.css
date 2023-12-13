@@ -15,6 +15,12 @@ body{
     margin: auto;
 }
 
+.heading{
+  font-size: 60px;
+  color: var(--darkblue);
+  padding-bottom: 20px;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -142,4 +148,191 @@ footer{
 }
 .numbers .numbersDiv p{
     color: var(--darkblue);
+}
+
+/****Hexagon shape****/
+ /* CSS styles */
+ .hexagon-container {
+    column-count: 6; /* Set the number of columns */
+    column-gap: 10px; /* Adjust the gap between columns */
+    width: 90%;
+    margin: auto;
+  }
+
+  .subject {
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    break-inside: avoid; /* To prevent subjects from breaking across columns */
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .subject i{
+    font-size: 50px;
+    transition: font-size 0.3s ease-in-out;
+  }
+
+  .subject-title{
+    transition: display 0.3s ease-in-out;
+  }
+
+  /* Define unique colors for each subject */
+  .math {
+    background-color: #2196F3; /* Blue */
+    height: 220px;
+  }
+
+  .english {
+    background-color: #FF9800; /* Orange */
+  }
+
+  .kiswahili {
+    background-color: #4CAF50; /* Green */
+  }
+
+  .physics {
+    background-color: #9C27B0; /* Purple */
+    
+  }
+
+  .chemistry {
+    background-color: #E91E63; /* Pink */
+    
+  }
+
+  .biology {
+    background-color: #00BCD4; /* Cyan */
+    
+  }
+
+  .history {
+    background-color: #FFEB3B; /* Yellow */
+    
+  }
+
+  .geography {
+    background-color: #795548; /* Brown */
+  }
+
+  .civics {
+    background-color: #607D8B; /* Grey */
+  }
+
+  .literature {
+    background-color: #9E9E9E; /* Dark Grey */
+  }
+
+  .commerce {
+    background-color: #8BC34A; /* Light Green */
+  }
+
+  .book-keeping {
+    background-color: #FF5722; /* Deep Orange */
+  }
+
+  /****Styling the subject levels****/
+  .level{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    opacity: 1;
+    transition: display 0.3s ease-in-out;
+  }
+  .level.active {
+    display: flex; 
+  }
+
+  .level-link{
+    text-decoration: none;
+    color: white;
+  }
+
+  .within-the-fold{
+    padding: 50px 0 100px 0;
+}
+
+.within-the-fold div{
+  flex: 1;
+  padding-left: 100px;
+}
+
+.within-the-fold h1{
+  font-size: 60px;
+  color: var(--darkblue);
+  padding-bottom: 20px;
+}
+.within-the-fold p{
+  font-size: 20px;
+  padding-bottom: 20px;
+
+}
+
+.within-the-fold button{
+  padding: 10px 20px;
+  background-color: var(--darkblue);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--darkblue);
+}
+
+.within-the-fold img{
+  flex: 1;
+  border-radius: 10px;
+  height: 300px;
+  width: 50%;
+  object-fit: cover;
+  border-width: 0 5px 5px 0;
+  border-style: solid;
+  border-color: var(--orange);
+}
+
+
+
+.down-the-fold{
+  padding: 50px 0 100px 0;
+}
+
+.down-the-fold div{
+flex: 1;
+padding-right: 100px;
+}
+
+.down-the-fold h1{
+font-size: 60px;
+color: var(--darkblue);
+padding-bottom: 20px;
+}
+.down-the-fold p{
+font-size: 20px;
+padding-bottom: 20px;
+
+}
+
+.down-the-fold button{
+padding: 10px 20px;
+background-color: var(--darkblue);
+color: white;
+border-radius: 5px;
+cursor: pointer;
+border: 1px solid var(--darkblue);
+}
+
+.down-the-fold img{
+  flex: 1;
+  border-radius: 10px;
+  height: 300px;
+  width: 50%;
+  object-fit: cover;
+  border-width: 0 0 5px 5px;
+  border-style: solid;
+  border-color: var(--orange);
 }
