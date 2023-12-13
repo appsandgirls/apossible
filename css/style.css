@@ -336,3 +336,30 @@ border: 1px solid var(--darkblue);
   border-style: solid;
   border-color: var(--orange);
 }
+
+
+/***Testimonals Styles*****/
+.testimonials .testimonial{
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.testimonials .testimonial p{
+  padding-bottom: 20px;
+  color: var(--darkblue)
+}
+
+.testimonials .testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.testimonials .testimonial .row-start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px
+}
