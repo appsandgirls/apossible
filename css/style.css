@@ -398,6 +398,7 @@ border: 1px solid var(--darkblue);
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    background-color: #ffffff;
 }
 
 /* Style for the dropdown options */
