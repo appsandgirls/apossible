@@ -1,63 +1,32 @@
-function showLevel() {
-    var levelContainer = document.getElementsByClassName(".levelContainer");
-   
-    for (var i=0; i<levelContainer.length; i++){
-        levelContainer[i].classList.add("active");
-    }
+function showLevel(event) {
+    var currentSubject = event.currentTarget;
 
-    // Reduce font size for .subject i
-    document.getElementsByClassName(".subject i").style.fontSize = "20px";
+    // Add the 'active' class to the current subject
+    currentSubject.querySelector(".levelContainer").classList.add("active");
 
-    //Hide Subject title
-    document.getElementsByClassName(".subject-title").style.display = "none";
+    // Reduce font size for the current subject's icon
+    currentSubject.querySelector("i").style.fontSize = "20px";
 
-
+    // Hide the title of the current subject
+    currentSubject.querySelector(".subject-title").style.display = "none";
 }
 
-function hideLevel() {
-    var levelContainer = document.getElementsByClassName(".levelContainer");
-    
-    for (var i=0; i<levelContainer.length; i++){
-        levelContainer[i].classList.remove("active");
-    }
+function hideLevel(event) {
+    var currentSubject = event.currentTarget;
 
-    // Restore font size for .subject i
-    document.getElementsByClassName(".subject i").style.fontSize = "50px";
+    // Remove the 'active' class from the current subject
+    currentSubject.querySelector(".levelContainer").classList.remove("active");
 
-    //Restore Subject title
-    document.getElementsByClassName(".subject-title").style.display = "block";
-}
-/* 
-function showLevel() {
-    var levelContainer = document.querySelectorAll(".levelContainer");
+    // Restore font size for the current subject's icon
+    currentSubject.querySelector("i").style.fontSize = "50px";
 
-    for (var i=0; i<levelContainer.length; i++){
-        levelContainer[i].classList.add("active");
-    }
-
-    // Reduce font size for .subject i
-    var subjectIcon = document.getElementsByClassName(".subject i");
-    subjectIcon.style.fontSize = "20px";
-
-    //Hide Subject title
-    const subjectTitle = document.getElementsByClassName(".subject-title");
-    subjectTitle.style.display = "none";
-
-
+    // Restore the title of the current subject
+    currentSubject.querySelector(".subject-title").style.display = "block";
 }
 
-function hideLevel() {
-    var levelContainer = document.querySelectorAll(".levelContainer");
-
-    for (var i=0; i<levelContainer.length; i++){
-        levelContainer[i].classList.remove("active");
-    }
-
-    // Restore font size for .subject i
-   var subjectIcon = document.querySelectorAll(".subject i");
-   subjectIcon.style.fontSize = "50px";
-
-    //Restore Subject title
-    const subjectTitle = document.getElementsByClassName(".subject-title");
-    subjectTitle.style.display = "block";
-} */
+// Add event listeners
+var subjects = document.querySelectorAll('.subject');
+subjects.forEach(function(subject) {
+    subject.addEventListener('mouseenter', showLevel);
+    subject.addEventListener('mouseleave', hideLevel);
+});
