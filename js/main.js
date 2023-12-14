@@ -1,5 +1,5 @@
 function showLevel(event) {
-    var currentSubject = event.currentTarget;
+    const currentSubject = event.currentTarget;
 
     // Add the 'active' class to the current subject
     currentSubject.querySelector(".levelContainer").classList.add("active");
@@ -12,7 +12,7 @@ function showLevel(event) {
 }
 
 function hideLevel(event) {
-    var currentSubject = event.currentTarget;
+    const currentSubject = event.currentTarget;
 
     // Remove the 'active' class from the current subject
     currentSubject.querySelector(".levelContainer").classList.remove("active");
@@ -25,8 +25,19 @@ function hideLevel(event) {
 }
 
 // Add event listeners
-var subjects = document.querySelectorAll('.subject');
+const subjects = document.querySelectorAll('.subject');
 subjects.forEach(function(subject) {
     subject.addEventListener('mouseenter', showLevel);
     subject.addEventListener('mouseleave', hideLevel);
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuContainer = document.querySelector('.menu-container');
+  
+    menuToggle.addEventListener('click', function () {
+      menuContainer.classList.toggle('show-mobile-menu');
+    });
+  });
+  
