@@ -341,11 +341,6 @@ footer{
   padding-left: 100px;
 }
 
-.within-the-fold h1{
-  font-size: 60px;
-  color: var(--darkblue);
-  padding-bottom: 20px;
-}
 .within-the-fold p{
   font-size: 20px;
   padding-bottom: 20px;
@@ -381,11 +376,7 @@ flex: 1;
 padding-right: 100px;
 }
 
-.down-the-fold h1{
-font-size: 60px;
-color: var(--darkblue);
-padding-bottom: 20px;
-}
+
 .down-the-fold p{
 font-size: 20px;
 padding-bottom: 20px;
@@ -489,6 +480,11 @@ border: 1px solid var(--darkblue);
 
   .heading{
     font-size: 45px;
+  }
+
+  .within-the-fold div{
+    flex: 1;
+    padding-right: 100px;
   }
 
 }
