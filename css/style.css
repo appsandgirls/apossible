@@ -157,8 +157,6 @@ header {
   display: block;
 }
 
-
-
 footer{
     background-color: var(--darkblue);
     color: var(--orange);
@@ -254,6 +252,7 @@ footer{
   .subject i{
     font-size: 50px;
     transition: font-size 0.3s ease-in-out;
+    padding: 20px;
   }
 
   .subject-title{
